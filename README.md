@@ -2,6 +2,15 @@
 
 ## General
 
+Each sub-folder contains the code I have written to solve the associated problem.
+
+You can see the code run by opening the `*.html` file in your browser and opening the Console in its Developer Tools.
+
+Alternately you can execute the Javascript code directly by running `node *.js`.
+
+## Tests
+
+I wrote some basic unit tests, using two simple functions I wrote myself and/or `console.log` statements. The output is 'true' if the test passed, otherwise false.
 
 ## Fibonacci
 
