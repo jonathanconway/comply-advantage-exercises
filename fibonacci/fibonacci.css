@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Sans+Pro&display=swap');
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+}
+
+form > *:not(:last-child) {
+  margin-right: 1rem;
+}
+
+#result {
+  display: inline-block;
+  width: 8rem;
+  padding: .5rem;
+  border: solid 1px silver;
+  border-radius: 0.5rem;
+  font-family: 'Source Code Pro', monospace;
+}
+
+button {
+  border-radius: 0.5rem;
+  width: 5rem;
+  padding: .5rem;
+  font-size: 1.5rem;
+}

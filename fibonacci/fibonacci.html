@@ -1,0 +1,58 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>Fibonacci Generator UI</title>
+  <meta name="description" content="Fibonacci Generator UI">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="fibonacci.css">
+
+  <script src="fibonacci.js"></script>
+  <script>
+    (function () {
+
+      function setResult(result) {
+        document.getElementById("result").innerText = result;
+      }
+
+      function reset() {
+        setResult(generateNextFibonacci(true));
+      }
+
+      function next() {
+        setResult(generateNextFibonacci());
+      }
+
+      document.addEventListener("click", function (event) {
+        switch (event.target.id) {
+          case "next":
+            next();
+            return;
+          case "reset":
+            reset();
+            return;
+        }
+      });
+
+      window.onload = function () {
+        reset();
+      };
+
+    }());
+  </script>
+</head>
+
+<body>
+
+  <h1>Fibonacci Generator UI</p>
+
+  <form>
+    <span id="result"></span>
+    <button id="next" type="button">Next</button>
+    <button id="reset" type="button">Reset</button>
+  </form>
+</body>
+
+</html>
